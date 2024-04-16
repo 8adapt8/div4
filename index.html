@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button with Two Input Fields</title>
+<style>
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <input type="number" id="firstNumber" placeholder="First Number">
+  <input type="number" id="secondNumber" placeholder="Second Number">
+  <button onclick="performAction()">Submit</button>
+  <div id="result"></div>
+</div>
+
+<script>
+function performAction() {
+    var firstNumber = document.getElementById("firstNumber").value;
+    var secondNumber = document.getElementById("secondNumber").value;
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerText = "Hello World";
+}
+</script>
+
+</body>
+</html>
